@@ -1,6 +1,6 @@
 ---
 title: "Interpreter"
-date: 2026-06-06 00:00:00 +0500
+date: 2026-05-30 00:00:00 +0500
 categories: [HackTheBox, Linux]
 tags: [Mirth-Connect, CVE-2023-43208, Maraidb, SSTI-Root]
 description: Writeup for HackTheBox Interpreter machine
