@@ -2,13 +2,12 @@
 title: "Overwatch"
 date: 2026-05-09 00:00:00 +0500
 categories: [HackTheBox, Windows]
-tags: [MSSQL, LinkedServer-Spoofing, Monitoring-Service, SOAP]
+tags: [.NET-Reverse-Engineering, Active-Directory, Command-Injection, DCSync, DNS-Hijacking, Linked-Server, MSSQL, Mimikatz, SOAP-Service]
 description: Writeup for HackTheBox Overwatch machine
 image:
   path: assets/img/overwatch/overwatch.png
   alt: HTB Overwatch
 ---
-
 ## Executive Summary
 
 This report documents the complete attack chain against the HackTheBox machine **OverWatch**, a Windows Server 2022 Domain Controller running Active Directory with MSSQL. The exploitation path chains four distinct techniques:

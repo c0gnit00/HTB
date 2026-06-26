@@ -8,7 +8,7 @@ image:
   path: assets/img/principal/principal.png
   alt: HTB Principal
 ---
-### Executive Summary
+## Executive Summary
 
 This writeup documents the exploitation of the Principal HTB machine, which demonstrates a critical attack chain involving multiple vulnerabilities:
 

